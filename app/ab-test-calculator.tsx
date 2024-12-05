@@ -443,8 +443,8 @@ export default function ABTestCalculator() {
               position: 'top',
               content: ({ value, x, y, width }) => (
                 <text
-                  x={x + width / 2}
-                  y={y - 10}
+                  x={Number(x) + Number(width) / 2}
+                  y={Number(y) - 10}
                   fill="#000000"
                   textAnchor="middle"
                   dominantBaseline="middle"
